@@ -10,5 +10,6 @@
 greeting = "Hello"
 greeting += " World!"
 print("\nTASK 4")
+greeting = greeting.lower()
 print(greeting)
 print(greeting.find("o"))
