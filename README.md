@@ -1,182 +1,175 @@
-**`Python course`**
+**`Chapter 5 (Python loops)`**
 
-**`Chapter 1,2 (Primitive data types)`**
-
-### **`Task 1: Working with Integers`**
+### **`Task 1: Loop through a List and Modify Elements`**
 
 **`Problem:`**
 
-1. `Create an integer variable num with a value of 15.`  
-   2. `Perform the following operations:`
-   - `Add 5 to num and store the result.`
-   - `Subtract 3 from num and store the result.`
-   - `Multiply num by 4 and store the result.`
-   - `Divide num by 2 and store the result (use integer division).`
-   3. `Print the final value of num.`
+1. `Create a list of integers: [3, 7, 1, 9, 4].`  
+   2. `Use a for loop to iterate through the list and:`  
+      * `Multiply each number by 3.`  
+      * `Replace numbers greater than 15 with 'Too large'.`  
+      * `Print the modified list after the loop.`
 
 **`Example Output:`**
 
-`30`
+`[9, 21, 3, 'Too large', 12]`
+
+`Consider checking on enumerate built-in function`
 
 ---
 
-### **`Task 2: Floating Point Operations`**
+### **`Task 2: Sum of Even Numbers in a List`**
 
 **`Problem:`**
 
-1. `Create a float variable radius with a value of 7.5.`  
-   2. `Calculate the area of a circle with this radius using the formula area = π * r^2.`
-   - `Use 3.14159 for π.`
-   3. `Print the area of the circle.`
+1. `Create a list of integers: [10, 20, 30, 40, 50, 11, 17, 22].`  
+   2. `Use a for loop to iterate through the list and calculate the sum of only the even numbers.`  
+   3. `Print the sum of even numbers and how many even numbers were found.`
 
 **`Example Output:`**
 
-`176.714875`
+`Sum of even numbers: 172`  
+`Number of even numbers: 6`
 
 ---
 
-### **`Task 3: Boolean Operations`** **`Problem:`**
-
-1. `Create two boolean variables is_logged_in and has_permission:`
-   - `Set is_logged_in to True.`
-     - `Set has_permission to False.`
-   2. `Perform the following logical operations:`
-      - `is_logged_in AND has_permission.`
-      - `is_logged_in OR has_permission.`
-      - `NOT has_permission.`
-   3. `Print the results.`
-
-**`Example Output:`**
-
-`False`  
-`True`  
-`True`
-
----
-
-### **`Task 4: String Operations`**
+### **`Task 3: Loop through a Range with Step`**
 
 **`Problem:`**
 
-1. `Create a string variable greeting with the value "Hello".`  
-   2. `Perform the following string operations:`
-   - `Concatenate " World!" to greeting.`
-   - `Convert greeting to lowercase and store the result.`
-   - `Find the index of the letter 'o' in the string greeting.`
-   3. `Print the final string and index.`
+1. `Use a for loop with range() to print every third number between 10 and 30 (inclusive).`  
+   2. `After printing the numbers, print the sum of these numbers.`
 
 **`Example Output:`**
 
-`hello world!`  
-`4`
+`10`  
+`13`  
+`16`  
+`19`  
+`22`  
+`25`  
+`28`  
+`Sum: 133`
 
 ---
 
-### **`Task 5: Type Conversion`**
+### **`Task 4: Nested Loops for Matrix Printing`**
 
 **`Problem:`**
 
-1. `Create a string variable str_value with the value "1234".`  
-   2. `Convert str_value to:`
-   - `An integer and store it in int_value.`
-   - `A float and store it in float_value.`
-   3. `Print the converted int_value and float_value.`
+`Create a 2D list (matrix) representing a grid of numbers:`
+
+`matrix = [`  
+    `[1, 2, 3],`  
+    `[4, 5, 6],`  
+    `[7, 8, 9]`  
+`]`
+
+1. `Use a nested for loop to print each row in the matrix on a new line.`  
+2. `Modify the program to sum the values in each row and print the sum after each row.`
 
 **`Example Output:`**
 
-`1234`  
-`1234.0`
-
+`Row: [1, 2, 3] Sum: 6`  
+`Row: [4, 5, 6] Sum: 15`  
+`Row: [7, 8, 9] Sum: 24`  
 ---
 
-### **`Task 6: Complex Numbers`**
+### **`Task 5: Reverse List and Print Indices`**
 
 **`Problem:`**
 
-1. `Create a complex number variable z with the value 2 + 3j.`  
-   2. `Perform the following operations:`
-   - `Get the real part of z.`
-   - `Get the imaginary part of z.`
-   - `Calculate the modulus (magnitude) of the complex number.`
-   3. `Print the real part, imaginary part, and modulus.`
+1. `Create a list of strings: ['apple', 'banana', 'cherry', 'date', 'elderberry'].`  
+   2. `Use a loop to:`  
+      * `Reverse the list without using the reverse() function.`  
+      * `Print each element along with its index in the reversed list.`
 
 **`Example Output:`**
 
-`Real part: 2.0`  
-`Imaginary part: 3.0`  
-`Modulus: 3.605551275463989`
+`Index 0: elderberry`  
+`Index 1: date`  
+`Index 2: cherry`  
+`Index 3: banana`  
+`Index 4: apple`
+
+`Consider checking on enumerate built-in function`
 
 ---
 
-### **`Task 7: Using is Operator with Primitive Types`**
+### **`Task 6: Modify Values in a Nested List`**
 
-**`Problem:`**
+#### **`Problem:`**
 
-1. `Create two integer variables x = 500 and y = 500.`  
-   2. `Use the is operator to check if x and y refer to the same object in memory and print the result.`  
-   3. `Create two variables p = 10 and q = 10.`
+`You are given a nested list that represents a grid of numbers. Your task is to use nested loops to modify some of the values in the grid based on specific conditions.`
 
-- `Use the is operator to check if p and q refer to the same object in memory and print the result.`
+**`Input:`** `A 2D list (nested list) containing integers. Example:`
 
-**`Example Output:`**
+`grid = [`  
+    `[1, 2, 3],`  
+    `[4, 5, 6],`  
+    `[7, 8, 9]`  
+`]`
 
-`False`  
-`True`
+**`Conditions:`**
 
----
+1. `If a number is even, double its value.`  
+2. `If a number is odd, replace it with 0.`
 
-### **`Task 8: Power and Modulus Operations`**
+**`Output:`** `The modified grid after applying the changes.`  
+`Example output for the given grid:`
 
-**`Problem:`**
-
-1. `Create an integer variable base with a value of 5 and another integer exponent with a value of 3.`  
-   2. `Use the power operator (**) to calculate base raised to the power of exponent.`  
-   3. `Use the modulus operator (%) to calculate the remainder when dividing base by exponent.`  
-   4. `Print the results of both operations.`
-
-**`Example Output:`**
-
-`Power: 125`  
-`Modulus: 2`
+`[`   
+    `[0, 4, 0],`   
+    `[8, 0, 12],`   
+    `[0, 0, 0]`   
+`]`
 
 ---
 
-### **`Task 9: Floor Division and Remainder`**
+### **`Task 7: Modify a List Using a While Loop`**
 
-**`Problem:`**
+#### **`Problem:`**
 
-1. `Create two integer variables num1 = 17 and num2 = 4.`  
-   2. `Perform the following:`
-   - `Use the floor division operator (//) to calculate the result of num1 divided by num2.`
-   - `Use the remainder operator (%) to calculate the remainder when dividing num1 by num2.`
-   3. `Print the results of both operations.`
+`You are given a list of integers. Use a while loop to iterate through the list and modify the values based on the following conditions:`
 
-**`Example Output:`**
+**`Conditions:`**
 
-`Floor division result: 4`  
-`Remainder: 1`
+* `If a number is negative, set it to 0.`  
+  * `If a number is positive, double its value.`  
+  * `If a number is 0, skip it without making any changes.`
 
----
+**`Input:`**
 
-### **`Task 10: Arithmetic Operations with Floating Points`**
+`numbers = [-3, 5, 0, -1, 8, 2]`
 
-**`Problem:`**
+**`Expected Output:`**  
+`After applying the conditions, the output should be:`
 
-1. `Create two float variables a = 12.5 and b = 3.0.`  
-   2. `Perform the following arithmetic operations:`
-   - `Add a and b.`
-   - `Subtract b from a.`
-   - `Multiply a and b.`
-   - `Divide a by b (perform floating point division).`
-   3. `Print the results of all the operations.`
-
-**`Example Output:`**
-
-`Addition: 15.5`  
-`Subtraction: 9.5`  
-`Multiplication: 37.5`  
-`Division: 4.166666666666667`
+`[0, 10, 0, 0, 16, 4]`
 
 ---
 
-###
+### **`Bonus Task 8: Simulate a Do-While Loop in Python`**
+
+#### **`Problem:`**
+
+`Python does not have a built-in do-while loop, but you can simulate one. Write a program that repeatedly asks the user to input a number until they enter a value between 1 and 10. Ensure the first prompt executes at least once, even if the user enters an invalid value.`
+
+**`Input/Output Example:`**
+
+`Enter a number between 1 and 10: -5`  
+`Invalid input. Try again.`  
+`Enter a number between 1 and 10: 12`  
+`Invalid input. Try again.`  
+`Enter a number between 1 and 10: 7`  
+`Thank you! Your number is 7.`
+
+---
+
+**`Hint for Implementation:`**
+
+1. `Use an infinite while True loop to simulate the "do" part.`  
+2. `Break the loop when the condition is satisfied.`
+
+---
+
