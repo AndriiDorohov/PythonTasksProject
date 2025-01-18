@@ -1,175 +1,95 @@
-**`Chapter 5 (Python loops)`**
+**`Chapter 9 (Python dictionary)`**
 
-### **`Task 1: Loop through a List and Modify Elements`**
-
-**`Problem:`**
-
-1. `Create a list of integers: [3, 7, 1, 9, 4].`  
-   2. `Use a for loop to iterate through the list and:`  
-      * `Multiply each number by 3.`  
-      * `Replace numbers greater than 15 with 'Too large'.`  
-      * `Print the modified list after the loop.`
-
-**`Example Output:`**
-
-`[9, 21, 3, 'Too large', 12]`
-
-`Consider checking on enumerate built-in function`
-
----
-
-### **`Task 2: Sum of Even Numbers in a List`**
+### **`Task 1: Basic Dictionary Operations`**
 
 **`Problem:`**
 
-1. `Create a list of integers: [10, 20, 30, 40, 50, 11, 17, 22].`  
-   2. `Use a for loop to iterate through the list and calculate the sum of only the even numbers.`  
-   3. `Print the sum of even numbers and how many even numbers were found.`
+`Create a dictionary representing a person's details:`
+
+`person = {`  
+    `"name": "Alice",`  
+    `"age": 25,`  
+    `"city": "New York"`  
+`}`
+
+1.   
+   2. `Update the "city" field of the dictionary to "San Francisco".`  
+   3. `Add a new key-value pair "job": "Engineer" to the dictionary.`  
+   4. `Print the updated dictionary.`
 
 **`Example Output:`**
 
-`Sum of even numbers: 172`  
-`Number of even numbers: 6`
+`{'name': 'Alice', 'age': 25, 'city': 'San Francisco', 'job': 'Engineer'}`
 
 ---
 
-### **`Task 3: Loop through a Range with Step`**
+### **`Task 2: Dictionary Iteration`**
 
 **`Problem:`**
 
-1. `Use a for loop with range() to print every third number between 10 and 30 (inclusive).`  
-   2. `After printing the numbers, print the sum of these numbers.`
+`Create a dictionary with at least 5 key-value pairs representing student names and their grades:`
+
+`grades = {`  
+    `"Alice": 85,`  
+    `"Bob": 92,`  
+    `"Charlie": 88,`  
+    `"Diana": 95,`  
+    `"Eve": 78`  
+`}`
+
+`Use a for loop to iterate through the dictionary and print each student's name and their grade.`
 
 **`Example Output:`**
 
-`10`  
-`13`  
-`16`  
-`19`  
-`22`  
-`25`  
-`28`  
-`Sum: 133`
+`Alice: 85`  
+`Bob: 92`  
+`Charlie: 88`  
+`Diana: 95`  
+`Eve: 78`
 
 ---
 
-### **`Task 4: Nested Loops for Matrix Printing`**
+### **`Task 3: Dictionary with Nested Data`**
 
 **`Problem:`**
 
-`Create a 2D list (matrix) representing a grid of numbers:`
+`Create a dictionary representing a collection of books, where each book has a title, author, and publication year:`
 
-`matrix = [`  
-    `[1, 2, 3],`  
-    `[4, 5, 6],`  
-    `[7, 8, 9]`  
-`]`
+`books = {`  
+    `"book1": {"title": "1984", "author": "George Orwell", "year": 1949},`  
+    `"book2": {"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960}`  
+`}`
 
-1. `Use a nested for loop to print each row in the matrix on a new line.`  
-2. `Modify the program to sum the values in each row and print the sum after each row.`
+1. `Use a for loop to iterate through the outer dictionary.`  
+   2. `For each book, print the title, author, and year.`
 
 **`Example Output:`**
 
-`Row: [1, 2, 3] Sum: 6`  
-`Row: [4, 5, 6] Sum: 15`  
-`Row: [7, 8, 9] Sum: 24`  
+`Book: 1984, Author: George Orwell, Year: 1949`  
+`Book: To Kill a Mockingbird, Author: Harper Lee, Year: 1960`
+
 ---
 
-### **`Task 5: Reverse List and Print Indices`**
+### **`Task 4: Dictionary Search and Deletion`**
 
 **`Problem:`**
 
-1. `Create a list of strings: ['apple', 'banana', 'cherry', 'date', 'elderberry'].`  
-   2. `Use a loop to:`  
-      * `Reverse the list without using the reverse() function.`  
-      * `Print each element along with its index in the reversed list.`
+`Create a dictionary representing a phone book:`
 
-**`Example Output:`**
+`phone_book = {`  
+    `"Alice": "123-456-7890",`  
+    `"Bob": "987-654-3210",`  
+    `"Charlie": "555-123-4567"`  
+`}`
 
-`Index 0: elderberry`  
-`Index 1: date`  
-`Index 2: cherry`  
-`Index 3: banana`  
-`Index 4: apple`
+1. `Use a conditional statement to check if the contact "Alice" exists in the dictionary and print her phone number.`  
+   2. `Delete the contact "Bob" from the dictionary using del.`  
+   3. `Print the updated dictionary after the deletion.`
 
-`Consider checking on enumerate built-in function`
+**`Example Output (search and delete):`**
 
----
-
-### **`Task 6: Modify Values in a Nested List`**
-
-#### **`Problem:`**
-
-`You are given a nested list that represents a grid of numbers. Your task is to use nested loops to modify some of the values in the grid based on specific conditions.`
-
-**`Input:`** `A 2D list (nested list) containing integers. Example:`
-
-`grid = [`  
-    `[1, 2, 3],`  
-    `[4, 5, 6],`  
-    `[7, 8, 9]`  
-`]`
-
-**`Conditions:`**
-
-1. `If a number is even, double its value.`  
-2. `If a number is odd, replace it with 0.`
-
-**`Output:`** `The modified grid after applying the changes.`  
-`Example output for the given grid:`
-
-`[`   
-    `[0, 4, 0],`   
-    `[8, 0, 12],`   
-    `[0, 0, 0]`   
-`]`
-
----
-
-### **`Task 7: Modify a List Using a While Loop`**
-
-#### **`Problem:`**
-
-`You are given a list of integers. Use a while loop to iterate through the list and modify the values based on the following conditions:`
-
-**`Conditions:`**
-
-* `If a number is negative, set it to 0.`  
-  * `If a number is positive, double its value.`  
-  * `If a number is 0, skip it without making any changes.`
-
-**`Input:`**
-
-`numbers = [-3, 5, 0, -1, 8, 2]`
-
-**`Expected Output:`**  
-`After applying the conditions, the output should be:`
-
-`[0, 10, 0, 0, 16, 4]`
-
----
-
-### **`Bonus Task 8: Simulate a Do-While Loop in Python`**
-
-#### **`Problem:`**
-
-`Python does not have a built-in do-while loop, but you can simulate one. Write a program that repeatedly asks the user to input a number until they enter a value between 1 and 10. Ensure the first prompt executes at least once, even if the user enters an invalid value.`
-
-**`Input/Output Example:`**
-
-`Enter a number between 1 and 10: -5`  
-`Invalid input. Try again.`  
-`Enter a number between 1 and 10: 12`  
-`Invalid input. Try again.`  
-`Enter a number between 1 and 10: 7`  
-`Thank you! Your number is 7.`
-
----
-
-**`Hint for Implementation:`**
-
-1. `Use an infinite while True loop to simulate the "do" part.`  
-2. `Break the loop when the condition is satisfied.`
+`Alice's phone number: 123-456-7890`  
+`{'Alice': '123-456-7890', 'Charlie': '555-123-4567'}`
 
 ---
 
