@@ -9,3 +9,15 @@
 # Example Output:
 
 # 6
+
+
+def make_adder(add_value):
+
+    def adder(number):
+        print(add_value + number)
+
+    return adder
+
+
+new = make_adder(5)
+new(1)

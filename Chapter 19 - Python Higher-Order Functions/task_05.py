@@ -7,4 +7,27 @@
 # Call the decorated function and print the result.
 # Example Output:
 
+
 # 25
+#
+def double_decorator(function):
+    def wrapper():
+        return function() * 2
+
+    return wrapper
+
+
+def add_five_decorator(function):
+    def wrapper():
+        return function() + 5
+
+    return wrapper
+
+
+@add_five_decorator
+@double_decorator
+def get_value():
+    return 10
+
+
+print(get_value())

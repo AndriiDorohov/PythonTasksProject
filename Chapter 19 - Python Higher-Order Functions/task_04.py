@@ -10,3 +10,21 @@
 # Example Output:
 
 # 100
+
+
+def multiply_decorator(factor):
+    def decorator(function):
+        def wrapper():
+            return function() * factor
+
+        return wrapper
+
+    return decorator
+
+
+@multiply_decorator(2)
+def get_price():
+    return 50
+
+
+print(get_price())

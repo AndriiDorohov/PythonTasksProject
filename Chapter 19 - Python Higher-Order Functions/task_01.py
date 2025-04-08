@@ -16,3 +16,4 @@ def apply_function(func, value):
 
 my_callback = lambda x: x * 3
 print(apply_function(my_callback, 4))
+print(apply_function(my_callback, 10))

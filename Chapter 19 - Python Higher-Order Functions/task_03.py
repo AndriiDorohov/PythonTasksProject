@@ -8,3 +8,19 @@
 # Example Output:
 
 # HELLO
+
+
+def uppercase_decorator(func):
+    def wrapper():
+        a = func()
+        return a.upper()
+
+    return wrapper
+
+
+@uppercase_decorator
+def greet():
+    return "Hello"
+
+
+print(greet())
